@@ -6,8 +6,8 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 
 Try running some of the following tasks:
 
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npx hardhat help<b>
+npx hardhat test<b>
+REPORT_GAS=true npx hardhat test<b>
+npx hardhat node<b>
+npx hardhat run scripts/deploy.js<b>
