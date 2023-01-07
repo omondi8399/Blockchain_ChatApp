@@ -37,8 +37,32 @@ const fetchContract = (signerOrProvider) =>
 
 export const connectingWithContract = async () => {
     try {
+        const web3modal = new Web3Modal();
+        const connection = await web3modal.connect();
+        const provider = new ethers.providers.Web3Provider(connection);
+        const signer = provider.getSigner();
+        const contract = fetchContract(signer);
+
+        return contract;
         
     } catch (error) {
         console.log(error)
     }
 }
+export const converTime = (time) => {
+    const newTime = new Date(time.toNumber());
+
+    const realTime = newTime.getHours() +
+    "/" +
+    newTime.getMinutes() +
+    "/" +
+    newTime.getSeconds() +
+    "  Date:" +
+    newTime.getDate() +
+    "/" +
+    (newTime.getMonth() + 1) +
+    "/"
+    newTime.getFullYear;
+    
+    return realTime;
+    }
