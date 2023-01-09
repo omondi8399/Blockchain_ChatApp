@@ -1,0 +1,129 @@
+
+.NavBar{
+    width: 80%;
+    margin:  3rem auto;
+    position: relative;
+}
+
+.NavBar_box{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.NavBar_box_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavBar_box_right_menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 2px solid transparent;
+    transition:  all .3s ease-in-out;
+}
+
+.active_btn{
+    color:  #F18303;
+    border-bottom: 2px solid #F18303;
+    padding-bottom: .4rem;
+}
+
+.NavBar_box_right_connect{
+    display: flex;
+    justify-self: flex-end;
+}
+
+.NavBar_box_right_connect button{
+    background-color: rgba(0,0,0, 0.25);
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    color: #F18303;
+    font-weight: 700;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.NavBar_box_right_close{
+    display: none;
+}
+
+.NavBar_box_right_open{
+    display: none;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+.modelBox{
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: #292F3F;
+    z-index: 77777777;
+}
+
+@media only screen and (max-width: 35em) {
+    .NavBar{
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .NavBar_box{
+        grid-template-columns: .6fr 2fr;
+        justify-content: space-between;
+    }
+
+    .NavBar_box_right_connect button{
+        font-size: 1rem;
+        padding: .8rem;
+    }
+
+    .NavBar_box_right_open{
+        display: block;
+    }
+
+    .NavBar_box_right_menu{
+        position: fixed;
+        z-index: 111111;
+        background-color: #292F3F;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        inset: 0 0 0 0;
+        padding:  4rem;
+        display: none;
+    }
+
+    .mobile_menu{
+        display: block;
+        position: fixed;
+        z-index: 1111111;
+        background-color: #292F3F;
+        inset:  0 0 0 0;
+       text-align: center;
+       padding-top: 4rem;
+    }
+
+    .mobile_menu_items{
+        margin-top: 1rem;
+    }
+    .mobile_menu_btn{
+        padding-top: 2rem;
+    }
+
+    .modelBox{
+        position: absolute;
+        inset: 0 0 -70% 0%;
+        z-index: 11111;
+        background-color: #292F3F;
+    }
+}

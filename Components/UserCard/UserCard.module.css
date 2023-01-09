@@ -1,0 +1,35 @@
+.UserCard{
+    background-color: rgba(0,0,0, 0.25);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.UserCard_box_img{
+    border-radius: 50%;
+}
+
+.UserCard_box_info{
+    line-height: .6;
+}
+
+.UserCard_box_info button{
+    background-color: rgba(0,0,0, 0.25);
+    color: #F18303;
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.number{
+    position: absolute;
+    right: 1rem;
+    padding: 1rem 1.3rem;
+    border-radius: 50%;
+    background-color: #F18303;
+    top: 1rem;
+}
