@@ -8,7 +8,7 @@ import {
   connectingWithContract,
 } from "../Utils/apiFeature";
 
-export const ChatAppContect = React.createContext();
+export const ChatAppContext = React.createContext();
 
 export const ChatAppProvider = ({ children }) => {
   //USESTATE
@@ -138,7 +138,7 @@ export const ChatAppProvider = ({ children }) => {
         loading,
         error,
         currentUserName,
-        currentUserAddress
+        currentUserAddress,
       }}
     >
       {children}

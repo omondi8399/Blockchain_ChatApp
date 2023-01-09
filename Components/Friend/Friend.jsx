@@ -6,7 +6,7 @@ import Style from "./Friend.module.css";
 import images from "../../assets";
 import Card from "./Card/Card";
 import Chat from "./Chat/Chat";
-import { ChatAppContect } from "../../Context/ChatAppContext";
+import { ChatAppContext } from "../../Context/ChatAppContext";
 
 const Friend = () => {
   // const array = [1, 2, 34, 5, 6];/
@@ -22,7 +22,7 @@ const Friend = () => {
     currentUserName,
     currentUserAddress,
     readUser,
-  } = useContext(ChatAppContect);
+  } = useContext(ChatAppContext);
   console.log(friendLists);
   return (
     <div className={Style.Friend}>
